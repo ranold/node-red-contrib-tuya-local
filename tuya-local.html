@@ -5,10 +5,11 @@
 			devName :		{ value: "", required: true},
 			devIp:			{ value: "", required: true},
 			devId:			{ value: "", required: true },
-			devKey:			{ value: "", required: true},
-			protocolVer:	{ value: "3.3", required: true},
-			renameSchema:	{ value: "" },
-			filterCB: 		{ value: "" },
+            devGwId: 		{ value: "" },
+            devKey:			{ value: "", required: true},
+            protocolVer:	{ value: "3.3", required: true},
+            renameSchema:	{ value: "" },
+            filterCB: 		{ value: "" },
 		},
 		inputs: 1,
 		outputs: 1,
@@ -32,6 +33,10 @@
 	<div class="form-row">
 		<label for="node-input-devId"><i class="fa fa-id-badge"></i> ID</label>
 		<input type="text" id="node-input-devId" placeholder="82180808c44f33a6743a">
+	</div>
+	<div class="form-row">
+		<label for="node-input-devGwId"><i class="fa fa-id-badge"></i> gwID</label>
+		<input type="text" id="node-input-devGwId" placeholder="">
 	</div>
 	<div class="form-row">
 		<label for="node-input-devKey"><i class="fa fa-key"></i> Key</label>

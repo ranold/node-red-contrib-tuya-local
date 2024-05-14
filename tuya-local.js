@@ -14,9 +14,11 @@ module.exports = function(RED) {
 		this.version = config.protocolVer;
 		this.renameSchema = config.renameSchema;
 		this.filterCB = config.filterCB;
+		this.gwId = config.devGwId;
 		const dev_info =  {name:this.Name,ip:this.Ip,id:this.Id};
 		const device = new TuyaDev({
 			id: this.Id,
+			gwID: this.gwId,
 			key: this.Key,
 			ip: this.Ip,
 			version: this.version});
